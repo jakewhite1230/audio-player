@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" id="iconfont_css-css" href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="asm-player-body" class="clearfix">
+        <div id="asm-cover-image" style="background-image:url('img/coverart.jpeg');">
+          <div id="asm-play-button" class="play asm-prime-bkg-color">
+            <p class="material-icons">play_arrow</p>
+          </div>
+        </div>
+        <div id="asm-body-content">
+          <div id="asm-content-buttons">
+            <a><p id="asm-button-dwnld" class="asm-sec-color material-icons">file_download</p></a>
+            <div id="asm-share-buttons">
+              <a><p id="asm-share-twitter" class="socicon-twitter"></p></a>
+              <a><p id="asm-share-facebook" class="socicon-facebook"></p></a>
+            </div>
+          </div>
+          <div id="asm-content-info">
+            <h1 id="asm-content-title" class="asm-prime-color">Who Is The Church?</h1>
+            <p id="asm-content-captions" class="asm-sec-color">
+              Be The Church | Pastor Bubba Jennings | 08.07.16
+            </p>
+          </div>
+          <div id="asm-content-scrub-controls" class="clearfix">
+            <div id="asm-scrub-pos-container" class="asm-sec-color">
+              <span id="asm-scrub-position-time">22:36</span>
+            </div>
+            <span id="asm-content-scrub-bar" class="asm-sec-bkg-color" style="width:70%;">
+              <span id="asm-content-scrub-bar-current"class="asm-prime-bkg-color" style="width:25%"></span>
+            </span>
+            <div id="asm-scrub-length-container" class="asm-sec-color">
+              <span id="asm-scrub-length">52:30</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+<style>
+  .container{
+    width: 1200px;
+    margin: 0 auto;
+    display: block;
+  }
+  #asm-player-body{
+    background:#f5f5f5;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 75%;
+    margin: auto;
+    display: block;
+    position: relative;
+    min-height: 185px;
+    height: auto;
+  }
+  #asm-cover-image{
+    width: 25%;
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    height: 185px;
+    float: left;
+    position: relative;
+  }
+  #asm-play-button{
+    color: #ffffff;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(47,47,47,0.5);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    0px 0px 9px 1px rgba(47,47,47,0.5);  /* Firefox 3.5 - 3.6 */
+    box-shadow: 0px 0px 9px 1px rgba(47,47,47,0.5);
+    transition: all ease-in 0.5s;
+  }
+  #asm-play-button:hover{
+    box-shadow: none;
+    transition: all ease-in 0.5s;
+  }
+
+  #asm-play-button p{
+    position: relative;
+    margin: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    display: block;
+    font-size: 2.5rem;
+  }
+
+  #asm-body-content{
+    float: left;
+    margin-left: 45px;
+    width: 68%;
+    position: relative;
+    height: 185px;
+  }
+  #asm-content-buttons{
+    position: absolute;
+    width: 100%;
+    top: 10px;
+  }
+  #asm-content-buttons p{
+    margin-top: 0px;
+  }
+  #asm-share-buttons{
+    float: right;
+  }
+  #asm-share-buttons a{
+    float: left;
+  }
+  #asm-button-dwnld{
+    transition: all ease-in 0.3s;
+  }
+  #asm-button-dwnld:hover{
+    transition: all ease-in 0.3s;
+    /*Replace with prime color*/
+    color: #f05555;
+  }
+
+  #asm-share-twitter{
+    color:#00aced;
+    margin: 0px 5px;
+  }
+  #asm-share-facebook{
+    color:#3b5998;
+    margin: 0px 5px;
+  }
+  #asm-content-info{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+  }
+  #asm-content-title{
+    margin: 0px;
+  }
+  #asm-content-captions{
+    margin-top: 0px;
+  }
+  #asm-content-scrub-controls{
+    line-height: 0.3;
+    width: 100%;
+    position: absolute;
+    bottom: 25px;
+  }
+  #asm-scrub-pos-container,
+  #asm-scrub-length-container,
+  #asm-content-scrub-bar{
+    float: left;
+    display: block;
+    box-sizing: content-box;
+  }
+
+  #asm-scrub-pos-container,
+  #asm-scrub-length-container{
+    width: auto;
+    text-align: center;
+  }
+
+  #asm-scrub-pos-container{
+    margin-right: 10px;
+  }
+  #asm-scrub-length-container{
+    margin-left: 10px;
+  }
+
+
+  #asm-content-scrub-bar,
+  #asm-content-scrub-bar-current{
+    height: 7px;
+    display: block;
+    border-radius: 30px;
+  }
+  .asm-prime-bkg-color{
+    background:#f05555;
+  }
+  .asm-prime-color{
+    color:#f05555;
+  }
+  .asm-sec-bkg-color{
+    background:#656565;
+  }
+  .asm-sec-color{
+    color:#656565;
+  }
+
+  #asm-player-body .clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+#asm-player-body .clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html #asm-player-body .clearfix { height: 1%; }
+#asm-player-body .clearfix { display: block; }
+/* close commented backslash hack */
+</style>
+</body>
+</html>
